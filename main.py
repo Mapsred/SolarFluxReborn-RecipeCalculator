@@ -9,7 +9,7 @@ def main() -> None:
     action: Optional[str] = None
 
     while action != 'quit':
-        tier: str = cli.choose_from('tier', *map(str, range(6, 9)))
+        tier: str = cli.choose_from('tier', *map(str, range(1, 9)))
 
         if tier is None:
             continue
